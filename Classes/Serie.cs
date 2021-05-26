@@ -30,6 +30,7 @@ namespace ProjetoDIO.Series
       retorno += "Título: " + this.Titulo + Environment.NewLine;
       retorno += "Descricao: " + this.Descricao + Environment.NewLine;
       retorno += "Ano de Início: " + this.Ano + Environment.NewLine;
+      retorno += "Excluido: " + this.Excluido + Environment.NewLine;
 
       return retorno;
     }
@@ -45,5 +46,10 @@ namespace ProjetoDIO.Series
     public void excluirRegistro() {
       this.Excluido = true;
     }
+
+    public bool retornarExcluido()
+		{
+			return this.Excluido;
+		}
   }
 }
